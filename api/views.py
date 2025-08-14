@@ -10,7 +10,7 @@ class AutorView(ListCreateAPIView):
     queryset = Autor.objects.all()
     serializer_class = AutorSerializer
 
-@api_view({'GET', 'POST'})
+@api_view(['GET', 'POST'])
 def list_autor(request):
     if request.method == 'GET':
         queryset = Autor.objects.all()
