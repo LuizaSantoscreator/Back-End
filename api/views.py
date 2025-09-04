@@ -16,7 +16,7 @@ class AutorView(ListCreateAPIView):
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_fields = ['id']
-    search_nome = ['nome']
+    search_fields = ['nome']
 
 
 class AutoresDetailView(RetrieveUpdateDestroyAPIView):
